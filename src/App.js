@@ -7,8 +7,8 @@ function App() {
   return (
     <>
       <Header headerText={'Kalkulator akcyzy samochodowej'} />
-      <main>
-        <section className="w-full h-screen flex">
+      <main className="mb-5">
+        <section className="flex flex-col h-full">
           <div className="container mx-auto flex flex-col px-6 z-20 mt-6">
             <div>
               <h2>Oblicz akcyze za sprowadzony samochód na podstawie wprowadzonych danych.</h2>

@@ -2,8 +2,8 @@ import React from "react";
 
 const Header = ({headerText}) => {
     return (
-        <header>
-            <div className="text-black bg-sky-500/100">
+        <header className="flex">
+            <div className="text-black bg-sky-500/100 w-full">
                 <h1 className="text-white text-2xl p-5">{headerText}</h1>
             </div>
         </header>
