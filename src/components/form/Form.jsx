@@ -46,7 +46,7 @@ const Form = () => {
                 <input id="excise" className="border rounded p-1 bg-slate-100" type="text" disabled value={excise + ' PLN'}/>
             </div>
             <div className="flex flex-col h-20">
-                <input className="bg-blue-500 hover:bg-blue-700 text-white rounded p-2" type="submit" value="Zatwierdź" />
+                <input className="bg-sky-950 hover:bg-sky-950/75 text-white rounded p-2" type="submit" value="Zatwierdź" />
             </div>
         </form>
     )
