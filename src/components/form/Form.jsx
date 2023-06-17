@@ -22,8 +22,8 @@ const Form = () => {
     return (
         <form onSubmit={submitHandler} className="flex flex-col w-50 border border-slate-200 mt-4 p-8 rounded bg-slate-200">
             <div className="flex flex-col h-20">
-                <label className="mb-2" htmlFor="number">Wartość Pojazdu w PLN</label>
-                <input onChange={handleCost} className="border rounded p-1" type="number" step={0.01} min={1} value={cost}/>
+                <label className="mb-2" htmlFor="cost">Wartość Pojazdu w PLN</label>
+                <input onChange={handleCost} id="cost" className="border rounded p-1" type="number" step={0.01} min={1} value={cost}/>
             </div>
             <div className="flex flex-col h-20">
                 <label className="mb-2" htmlFor="type-option">Rodzaj pojazdu</label>
@@ -42,8 +42,8 @@ const Form = () => {
                 </select>
             </div>
             <div className="flex flex-col h-20">
-                <label className="mb-2" htmlFor="number">Akcyza</label>
-                <input className="border rounded p-1 bg-slate-100" type="text" disabled value={excise + ' PLN'}/>
+                <label className="mb-2" htmlFor="excise">Akcyza</label>
+                <input id="excise" className="border rounded p-1 bg-slate-100" type="text" disabled value={excise + ' PLN'}/>
             </div>
             <div className="flex flex-col h-20">
                 <input className="bg-blue-500 hover:bg-blue-700 text-white rounded p-2" type="submit" value="Zatwierdź" />
