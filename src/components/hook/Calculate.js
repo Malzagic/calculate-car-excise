@@ -1,5 +1,3 @@
-import React from "react";
-
 const Calculate = (capicty, type) => {
 
     let percent;
@@ -27,7 +25,7 @@ const Calculate = (capicty, type) => {
 
     let math = capicty * percent;
   
-    math = math.toFixed(2)
+    math = parseFloat(math).toFixed(2);
     console.log(math)
 
     return Number(math);
