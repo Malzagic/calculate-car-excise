@@ -23,7 +23,7 @@ const Form = () => {
         <form onSubmit={submitHandler} className="flex flex-col w-50 border border-slate-200 mt-4 p-8 rounded bg-slate-200">
             <div className="flex flex-col h-20">
                 <label className="mb-2" htmlFor="number">Wartość Pojazdu w PLN</label>
-                <input onChange={handleCost} className="border rounded p-1" type="number" min={1} value={cost}/>
+                <input onChange={handleCost} className="border rounded p-1" type="number" step={0.01} min={1} value={cost}/>
             </div>
             <div className="flex flex-col h-20">
                 <label className="mb-2" htmlFor="type-option">Rodzaj pojazdu</label>

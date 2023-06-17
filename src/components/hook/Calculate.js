@@ -6,28 +6,29 @@ const Calculate = (capicty, type) => {
 
     switch(type) {
         case 'type1':
-            percent = 3.1;
+            percent = 0.031;
             break;
         case 'type2':
-            percent = 18.6;
+            percent = 0.186;
             break;
         case 'type3':
-            percent = 9.3;
+            percent = 0.093;
             break;
         case 'type4':
-            percent = 9.3;
+            percent = 0.093;
             break;
         case 'type5':
-            percent = 1.55;
+            percent = 0.0155;
             break;
         default:
-            percent = 3.1;
+            percent = 0.031;
             break;
     }
 
-    let math = capicty / percent;
+    let math = capicty * percent;
   
     math = math.toFixed(2)
+    console.log(math)
 
     return Number(math);
 }
