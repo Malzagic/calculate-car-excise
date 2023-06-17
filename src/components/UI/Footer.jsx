@@ -6,7 +6,7 @@ const Footer = () => {
 
     return (
         <footer className="flex">
-            <div className="text-black bg-sky-500/100 w-full">
+            <div className="flex justify-center items-center text-black bg-sky-500/100 w-full">
                 <p className="text-white text-center text-xl p-5">&copy; {todayYear} kalkulator akcyzy na samochód by malzagic</p>
             </div>
         </footer>
